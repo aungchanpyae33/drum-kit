@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#756ac6, #e0aed0);
+}
+
+.container {
+  background-image: url(drum-set.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  max-width: 750px;
+  transition: all 0.8s;
+  justify-content: center;
+}
+.sound-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* for button */
+.sound-container button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #e5646fc2;
+  border-radius: 0.6rem;
+  border: 0.1px solid gainsboro;
+  cursor: pointer;
+}
+.sound-container button:last-child {
+  font-size: 1.2rem;
+  position: relative;
+  left: 0.8rem;
+  background-color: #756ac6cf;
+}
+.content {
+  color: aliceblue;
+}
+
+/* responsive */
+
+@media (max-width: 720px) {
+  .button-container {
+    width: 70vw;
+  }
+}
+@media (max-width: 592px) {
+  .button-container {
+    width: 90vw;
+  }
+}
